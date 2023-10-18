@@ -1,0 +1,19 @@
+{
+    "name": "acf/text-cta",
+    "title": "Text CTA Block",
+    "description": "A custom Text CTA Block block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+        "Text",
+        "CTA"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-cta.php"
+    },
+    "align": "full"
+}

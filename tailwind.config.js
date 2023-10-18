@@ -4,10 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'Open-sans': ['Open-sans','sans-serif'],
+        'Milkstore': ['Milkstore','sans-serif']
       },
 
       colors: {
-    
+        "primary": "#EB6624",
+        "secondary": "#18293E",
+        "text": "#18293c99",
+        "text-secondary": "#ffffff99" ,
       },
       height: {
  

@@ -1,0 +1,18 @@
+{
+    "name": "acf/three-columns",
+    "title": "Three Columns",
+    "description": "A custom Three Columns block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+       "three-columns"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "three-columns.php"
+    },
+    "align": "full"
+}

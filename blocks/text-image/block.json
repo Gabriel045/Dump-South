@@ -1,0 +1,20 @@
+{
+    "name": "acf/text-image-block",
+    "title": "Text Image Block",
+    "description": "A custom Text Image Block block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+        "Text",
+        "Image",
+        "Block"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-image-block.php"
+    },
+    "align": "full"
+}
