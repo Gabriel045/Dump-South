@@ -19,7 +19,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'list-item-block';
+$class_name = 'numeric-list-block';
 if (!empty($block['className'])) {
     $class_name .= ' ' . $block['className'];
 }
