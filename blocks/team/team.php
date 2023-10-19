@@ -19,7 +19,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'numeric-list-block';
+$class_name = 'three-columns-block';
 if (!empty($block['className'])) {
     $class_name .= ' ' . $block['className'];
 }
@@ -28,29 +28,19 @@ if (!empty($block['align'])) {
 }
 
 // Load values and assign defaults.
-$image           = get_field('image');
-$button          = get_field('button');
-$items           = get_field('items');
+$cards  = get_field('card'); ?>
 
-?>
-
-<section class="">
+<section>
     <div class="block_content">
-        <?php if (!empty($image)) : ?>
-            <div class="w-full mb-[100px]">
-                <img class="rounded-[10px] w-full lg:h-[460px] h-[285px]" src="<?php echo $image ?>" alt="">
-            </div>
-        <?php endif ?>
-        <div class="w-full flex flex-col gap-[100px] lg:px-[100px]">
-            <?php foreach ($items as $key => $item) : ?>
-                <div class="numeric-list">
-                    <?php if (!empty($item['title'])) : ?>
-                        <div class="text-secondary mb-[17px]">
-                            <h2 class="mr-[5px]"><?php echo $key + 1 ?>. </h2>
-                            <?php echo $item['title'] ?>
-                        </div>
-                    <?php endif ?>
-                    <p class="text-[16px] lg:text-[18px] font-[400] text-text lg:w-[90%]"><?php echo  $item['paragraph'] ?> </p>
+        <div class="flex flex-row flex-wrap justify-start gap-y-[50px]">
+            <?php foreach ($cards as $key => $card) : ?>
+                <div class="flex w-full lg:w-[33.3%] lg:px-[35px] last:mb-0 ">
+                    <div class="rounded-[10px]">
+                        <img class="rounded-[10px] w-full h-[400px] lg:h-[300px] object-cover" src="<?php echo $card['image'] ?>">
+                        <p class="text-secondary text-[16px] lg:text-[18px] font-[700] mt-[20px] mb-[15px]"><?php echo $card['text'] ?></p>
+                        <p class="text-primary text-[16px] lg:text-[18px] font-[600]"><?php echo $card['job'] ?></p>
+                        <p class="text-text text-[16px] lg:text-[18px] font-[400] mt-[20px]"><?php echo $card['paragraph'] ?> </p>
+                    </div>
                 </div>
             <?php endforeach ?>
         </div>

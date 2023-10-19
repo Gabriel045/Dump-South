@@ -28,17 +28,18 @@ if (!empty($block['align'])) {
 }
 
 // Load values and assign defaults.
+$background         = get_field('background');
 $title              = get_field('title');
 $paragraph          = get_field('paragraph');
 $cta                = get_field('cta');
 
 ?>
 
-<section class="bg-secondary">
+<section class="<?php echo ($background != "White" ) ? 'bg-secondary' : 'bg-white' ?>">
     <div class="block_content">
         <div class="mb-[100px] last:mb-0 direction flex flex-col items-center">
             <div class="text-center text-white"> <?php echo $title ?> </div>
-            <p class="text-text-secondary text-[16px] lg:text-[18px] font-[400] my-[20px] text-center lg:w-[70%]"><?php echo $paragraph ?> </p>
+            <p class="<?php echo ($background != "White" ) ? 'text-text-secondary' : 'text-text' ?> text-[16px] lg:text-[18px] font-[400] my-[30px] text-center lg:w-[70%]"><?php echo $paragraph ?> </p>
             <div class="flex w-full lg:w-fit text-center">
                 <?php echo (!empty($cta['url'])) ? '<a href="' . $cta['url'] . ' " class="orange_button w-full lg:w-fit">' . $cta['text'] . '</a>' : '' ?>
             </div>
