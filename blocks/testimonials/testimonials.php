@@ -55,8 +55,8 @@ $testimonials           = get_field('testimonials');
             <?php endforeach ?>
         </div>
         <div class="flex justify-end gap-[36px] mt-[50px]">
-            <span class="inline-block controlls prev"> <img class="cursor-pointer" src="<?php echo  get_stylesheet_directory_uri() ?>/assets/images/prev.svg" alt=""></span>
-            <span class="inline-block controlls next"> <img class="cursor-pointer" src="<?php echo  get_stylesheet_directory_uri() ?>/assets/images/next.svg" alt=""></span>
+            <span class="inline-block controlls relative z-50  prev"> <img class="cursor-pointer" src="<?php echo  get_stylesheet_directory_uri() ?>/assets/images/prev.svg" alt=""></span>
+            <span class="inline-block controlls relative z-50 next"> <img class="cursor-pointer" src="<?php echo  get_stylesheet_directory_uri() ?>/assets/images/next.svg" alt=""></span>
         </div>
     </div>
 </section>

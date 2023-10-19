@@ -562,6 +562,12 @@ video {
   }
 }
 
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
@@ -574,6 +580,10 @@ video {
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .top-\[20px\] {
@@ -604,6 +614,10 @@ video {
 
 .mb-\[100px\] {
   margin-bottom: 100px;
+}
+
+.mb-\[17px\] {
+  margin-bottom: 17px;
 }
 
 .mb-\[32px\] {
@@ -662,6 +676,22 @@ video {
   margin-top: 50px;
 }
 
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[3px\] {
+  margin-left: 3px;
+}
+
+.mr-\[3px\] {
+  margin-right: 3px;
+}
+
+.mr-\[5px\] {
+  margin-right: 5px;
+}
+
 .block {
   display: block;
 }
@@ -678,12 +708,16 @@ video {
   display: none;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-\[103px\] {
   height: 103px;
+}
+
+.h-\[1100px\] {
+  height: 1100px;
+}
+
+.h-\[285px\] {
+  height: 285px;
 }
 
 .h-\[370px\] {
@@ -698,8 +732,8 @@ video {
   height: 58px;
 }
 
-.h-\[700px\] {
-  height: 700px;
+.h-auto {
+  height: auto;
 }
 
 .w-1\/2 {
@@ -771,6 +805,10 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -797,6 +835,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-\[100px\] {
+  gap: 100px;
 }
 
 .gap-\[36px\] {
@@ -839,11 +881,6 @@ video {
 
 .bg-\[\#ffffff0f\] {
   background-color: #ffffff0f;
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 102 36 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -1005,7 +1042,7 @@ video {
   --text-secondary: #ffffff99;
 }
 
-body{
+body {
   font-family: Open-sans;
 }
 
@@ -1021,14 +1058,14 @@ section {
   width: 100%;
 }
 
-h1{
+h1 {
   color: #FFF;
   font-family: Milkstore;
   font-size: 42px;
   font-weight: 400;
 }
 
-h2{
+h2 {
   font-family: Open-sans;
   font-size: 30px;
   font-weight: 700;
@@ -1065,7 +1102,8 @@ h2{
   letter-spacing: -0.36px;
 }
 
-#menu-header-menu .sub-menu {
+#menu-header-menu .sub-menu,
+#menu-header-menu-1 .sub-menu {
   display: none;
   position: relative;
 }
@@ -1082,6 +1120,10 @@ h2{
   border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
+#menu-header-menu-1 .sub-menu.show {
+  display: block !important;
+}
+
 #menu-header-menu li {
   display: flex;
   gap: 5px;
@@ -1092,7 +1134,32 @@ h2{
 #menu-header-menu li a {
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+#menu-header-menu-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#menu-header-menu-1 li {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+#menu-header-menu-1 .sub-menu {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#menu-header-menu-1 .menu-item-has-children::after {
+  top: -15px !important;
 }
 
 .menu-item-has-children::after {
@@ -1110,11 +1177,11 @@ h2{
   transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 
-.learn_more:hover img{
+.learn_more:hover img {
   margin-left: 12px;
 }
 
-.content ul{
+.content ul {
   list-style: disc;
   margin-left: 20px;
   margin-top: 20px;
@@ -1144,6 +1211,118 @@ footer ul .menu-item a {
 
 footer ul .menu-item {
   margin-bottom: 30px;
+}
+
+.menu-mobile-container.active {
+  right: 0;
+  opacity: 1;
+  transition: all 0.8s ease-out;
+}
+
+.menu-mobile-container {
+  right: -600px;
+  top: 0px;
+  opacity: 0;
+  display: block;
+  transition: all 0.8s ease-in;
+}
+
+/* hamburguer menu */
+
+#nav-icon4 {
+  width: 25px;
+  height: 21px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 25px;
+  background: #FFF;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+/* Icon 4 */
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 15px;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  transform: rotate(45deg);
+  /*top: -3px;
+    left: 8px;*/
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 0px;
+}
+
+.numeric-list h2{
+  display: inline-block;
+}
+
+@media screen and (max-width: 1300px) {
+  header .orange_button {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .block_content {
+    padding: 100px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #menu-header-menu {
+    gap: 25px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .block_content {
+    padding: 100px 40px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 
 .before\:absolute::before {
@@ -1192,6 +1371,10 @@ footer ul .menu-item {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-\[20px\] {
+    top: 20px;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1202,10 +1385,6 @@ footer ul .menu-item {
 
   .lg\:mt-\[100px\] {
     margin-top: 100px;
-  }
-
-  .lg\:mt-\[40px\] {
-    margin-top: 40px;
   }
 
   .lg\:block {
@@ -1232,16 +1411,20 @@ footer ul .menu-item {
     height: 460px;
   }
 
+  .lg\:h-\[606px\] {
+    height: 606px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
 
-  .lg\:w-\[15\%\] {
-    width: 15%;
+  .lg\:w-\[10\%\] {
+    width: 10%;
   }
 
-  .lg\:w-\[18\%\] {
-    width: 18%;
+  .lg\:w-\[15\%\] {
+    width: 15%;
   }
 
   .lg\:w-\[25\%\] {
@@ -1278,6 +1461,10 @@ footer ul .menu-item {
 
   .lg\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .lg\:w-\[75\%\] {
+    width: 75%;
   }
 
   .lg\:w-\[78\%\] {
@@ -1330,9 +1517,9 @@ footer ul .menu-item {
     padding-right: 100px;
   }
 
-  .lg\:px-\[112px\] {
-    padding-left: 112px;
-    padding-right: 112px;
+  .lg\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .lg\:px-\[5px\] {
@@ -1350,5 +1537,24 @@ footer ul .menu-item {
 
   .lg\:text-\[18px\] {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .tablet\:w-\[15\%\] {
+    width: 15%;
+  }
+
+  .tablet\:w-\[18\%\] {
+    width: 18%;
+  }
+
+  .tablet\:w-\[67\%\] {
+    width: 67%;
+  }
+
+  .tablet\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }

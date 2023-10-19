@@ -46,7 +46,7 @@ $sections = get_field('section');
             $title             = $section['title'];
             $paragraph         = $section['paragraph']; ?>
 
-            <div class="mb-[100px] last:mb-0 flex flex-wrap lg:flex-nowrap gap-[40px] lg:gap-[80px]   <?php echo ($image_position == "row-reverse") ? 'lg:flex-row-reverse flex-col' : 'lg:flex-row flex-col'  ?>">
+            <div class="mb-[100px] last:mb-0 flex flex-wrap lg:flex-nowrap gap-[40px] lg:gap-[80px]   <?php echo ($image_position == "row-reverse") ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col-reverse'  ?>">
                <?php if(!empty($image)) :?>
                     <div class="w-full lg:w-[50%] ">
                         <img class="w-[370px] h-[370px] lg:w-[460px] lg:h-[460px] rounded-[10px] object-cover" src="<?php echo $image ?>" alt="">
