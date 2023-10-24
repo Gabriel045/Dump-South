@@ -32,14 +32,14 @@ $cards  = get_field('card'); ?>
 
 <section>
     <div class="block_content">
-        <div class="flex flex-row flex-wrap justify-start gap-y-[50px]">
+        <div class="flex flex-row flex-wrap justify-start gap-y-[50px] lg:gap-y-[100px]">
             <?php foreach ($cards as $key => $card) : ?>
                 <div class="flex w-full lg:w-[33.3%] lg:px-[35px] last:mb-0 ">
                     <div class="rounded-[10px]">
-                        <img class="rounded-[10px] w-full h-[400px] lg:h-[300px] object-cover" src="<?php echo $card['image'] ?>">
-                        <p class="text-secondary text-[16px] lg:text-[18px] font-[700] mt-[20px] mb-[15px]"><?php echo $card['text'] ?></p>
-                        <p class="text-primary text-[16px] lg:text-[18px] font-[600]"><?php echo $card['job'] ?></p>
-                        <p class="text-text text-[16px] lg:text-[18px] font-[400] mt-[20px]"><?php echo $card['paragraph'] ?> </p>
+                        <img class="rounded-[10px] w-full h-[360px] lg:h-[300px] object-cover" src="<?php echo $card['image'] ?>">
+                        <p class="text-secondary text-center text-[16px] lg:text-[18px] font-[700] mt-[20px] mb-[15px]"><?php echo $card['text'] ?></p>
+                        <p class="text-primary text-center text-[16px] lg:text-[18px] font-[600]"><?php echo $card['job'] ?></p>
+                        <p class="text-text text-[16px] text-center lg:text-[18px] font-[400] mt-[20px]"><?php echo $card['paragraph'] ?> </p>
                     </div>
                 </div>
             <?php endforeach ?>

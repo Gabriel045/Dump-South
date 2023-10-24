@@ -34,9 +34,9 @@ $cards  = get_field('card');
 <section class="">
     <div class="block_content">
         <?php foreach ($cards as $key => $card) : ?>
-            <div class="w-full flex lg:flex-row flex-col gap-[30px] mb-[100px] last:mb-0">
+            <div class="w-full flex lg:flex-row flex-col gap-[10px] lg:gap-[30px] mb-[50px] lg:mb-[100px] last:mb-0">
                 <div class="flex  w-full lg:w-[33.3%] lg:px-[5px] last:mb-0 ">
-                    <h2 class="text-primary"><?php echo $card['title'] ?> </h2>
+                    <h2 class="text-primary mb-[20px] lg:mb-[0px]"><?php echo $card['title'] ?> </h2>
                 </div>
                 <div class="flex w-full lg:w-[33.3%] lg:px-[5px] last:mb-0 ">
                     <div class="rounded-[10px] border-[1px] border-[#0000000d]">

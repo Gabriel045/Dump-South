@@ -41,11 +41,11 @@ $items           = get_field('items');
                 <img class="rounded-[10px] w-full lg:h-[460px] h-[285px]" src="<?php echo $image ?>" alt="">
             </div>
         <?php endif ?>
-        <div class="w-full flex flex-col gap-[100px] lg:px-[100px]">
+        <div class="w-full flex flex-col gap-[50px] lg:gap-[100px] lg:px-[100px]">
             <?php foreach ($items as $key => $item) : ?>
                 <div class="numeric-list">
                     <?php if (!empty($item['title'])) : ?>
-                        <div class="text-secondary mb-[17px]">
+                        <div class="text-secondary mb-[17px] flex">
                             <h2 class="mr-[5px]"><?php echo $key + 1 ?>. </h2>
                             <?php echo $item['title'] ?>
                         </div>
@@ -55,7 +55,7 @@ $items           = get_field('items');
             <?php endforeach ?>
         </div>
         <?php if (!empty($button['url'])) : ?>
-            <div class="flex w-full justify-center mt-[100px]">
+            <div class="flex w-full justify-center mt-[50px] lg:mt-[100px]">
                 <a href="<?php echo $button['url'] ?>" class="orange_button"><?php echo $button["text"] ?> </a>
             </div>
         <?php endif ?>

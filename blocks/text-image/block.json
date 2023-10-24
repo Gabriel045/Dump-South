@@ -16,5 +16,8 @@
         "mode": "preview",
         "renderTemplate": "text-image-block.php"
     },
-    "align": "full"
+    "align": "full",
+    "supports": {
+        "className": true
+    }
 }

@@ -13,7 +13,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="overflow-x-clip flex justify-center relative ">
-    <div class="max-w-[1440px] px-[30px] lg:px-[50px]  tablet:px-[100px]  w-full items-center flex absolute z-[999] lg:top-[20px]">
+    <div class="max-w-[1440px] px-[30px] lg:px-[50px]  tablet:px-[100px]  w-full items-center flex absolute z-[999] lg:top-0">
       <div class="w-[50%] lg:w-[10%] tablet:w-[15%] py-[40px]">
         <a href="<?php echo get_site_url() ?> "> <img class="h-[103px] w-auto relative z-50" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" alt=""></a>
       </div>

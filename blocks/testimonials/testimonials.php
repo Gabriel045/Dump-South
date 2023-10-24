@@ -70,7 +70,7 @@ $testimonials           = get_field('testimonials');
             useTransform: false,
             autoplay: true,
             dots: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 4000,
             prevArrow: jQuery('.prev'),
             nextArrow: jQuery('.next'),
             responsive: [{
