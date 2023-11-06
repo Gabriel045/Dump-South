@@ -1,0 +1,18 @@
+{
+    "name": "acf/blog-content",
+    "title": "Blog Content",
+    "description": "A custom Blog Content block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+        "Blog Content"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blog-content.php"
+    },
+    "align": "full"
+}

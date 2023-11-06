@@ -1,0 +1,18 @@
+{
+    "name": "acf/latest-blog",
+    "title": "Latest Blog",
+    "description": "A custom Latest Blog block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+        "Latest Blog"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "latest-blog.php"
+    },
+    "align": "full"
+}

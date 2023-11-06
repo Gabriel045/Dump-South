@@ -1,0 +1,18 @@
+{
+    "name": "acf/blogs",
+    "title": "blogs",
+    "description": "A custom blogs block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+        "blogs"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blogs.php"
+    },
+    "align": "full"
+}

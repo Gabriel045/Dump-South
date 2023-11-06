@@ -1,0 +1,18 @@
+{
+    "name": "acf/volumes",
+    "title": "Volumes",
+    "description": "A custom Volumes block.",
+    "style": [
+        "file:../../dist/output.css"
+    ],
+    "category": "custom",
+    "icon": "block-default",
+    "keywords": [
+        "Volumes"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "volumes.php"
+    },
+    "align": "full"
+}
