@@ -40,7 +40,7 @@ $testimonials           = get_field('testimonials');
 
 <section class="relative">
     <div class="block_content">
-        <div class="pb-[60px] lg:pb-[100px] blur_custom-3">
+        <div class="pb-[68px] blur_custom-3">
             <div class="text-[#232323] lg:w-[50%]"> <?php echo $title ?></div>
             <p class="text-text text-[18px] mt-[20px] lg:w-[70%]"><?php echo $paragraph ?> </p>
         </div>
@@ -54,7 +54,7 @@ $testimonials           = get_field('testimonials');
                 </div>
             <?php endforeach ?>
         </div>
-        <div class="flex justify-end gap-[36px] mt-[50px]">
+        <div class="flex justify-end gap-[36px] mt-[50px] lg:mt-[60px]">
             <span class="inline-block controlls relative z-50  prev"> <img class="cursor-pointer" src="<?php echo  get_stylesheet_directory_uri() ?>/assets/images/prev.svg" alt=""></span>
             <span class="inline-block controlls relative z-50 next"> <img class="cursor-pointer" src="<?php echo  get_stylesheet_directory_uri() ?>/assets/images/next.svg" alt=""></span>
         </div>

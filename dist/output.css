@@ -582,10 +582,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .top-\[20px\] {
   top: 20px;
 }
@@ -637,6 +633,10 @@ video {
 
 .mb-\[10px\] {
   margin-bottom: 10px;
+}
+
+.mb-\[15px\] {
+  margin-bottom: 15px;
 }
 
 .mb-\[17px\] {
@@ -715,6 +715,10 @@ video {
   margin-top: 15px;
 }
 
+.mt-\[17px\] {
+  margin-top: 17px;
+}
+
 .mt-\[20px\] {
   margin-top: 20px;
 }
@@ -723,24 +727,20 @@ video {
   margin-top: 2px;
 }
 
-.mt-\[50px\] {
-  margin-top: 50px;
-}
-
-.mt-\[69px\] {
-  margin-top: 69px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
 .mt-\[40px\] {
   margin-top: 40px;
 }
 
-.mt-\[17px\] {
-  margin-top: 17px;
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[56px\] {
+  margin-top: 56px;
+}
+
+.mt-\[69px\] {
+  margin-top: 69px;
 }
 
 .block {
@@ -781,6 +781,10 @@ video {
 
 .h-\[350px\] {
   height: 350px;
+}
+
+.h-\[360px\] {
+  height: 360px;
 }
 
 .h-\[370px\] {
@@ -952,6 +956,10 @@ video {
   row-gap: 30px;
 }
 
+.gap-y-\[50px\] {
+  row-gap: 50px;
+}
+
 .overflow-x-clip {
   overflow-x: clip;
 }
@@ -1088,6 +1096,10 @@ video {
 
 .pb-\[60px\] {
   padding-bottom: 60px;
+}
+
+.pb-\[68px\] {
+  padding-bottom: 68px;
 }
 
 .pb-\[70px\] {
@@ -1434,6 +1446,11 @@ footer ul .menu-item a {
   position: relative;
 }
 
+footer a:hover {
+  color: #EB6624 !important;
+  transition: all 0.2s ease;
+}
+
 footer ul .menu-item {
   margin-bottom: 30px;
 }
@@ -1514,6 +1531,10 @@ footer ul .menu-item {
   display: inline-block;
 }
 
+.h-med p {
+  font-size: 22px;
+}
+
 @media screen and (max-width: 1300px) {
   header .orange_button {
     font-size: 14px !important;
@@ -1576,6 +1597,10 @@ footer ul .menu-item {
   #three-columns .w-50 {
     width: 100% !important;
     margin-top: 10px !important;
+  }
+
+  .h-med p {
+    font-size: 18px;
   }
 }
 
@@ -1709,7 +1734,7 @@ table>tfoot:not(:last-child) {
   margin-left: 20px;
 }
 
-.h-800.lg\:h-\[1024px\]{
+.h-800.lg\:h-\[1024px\] {
   height: 800px;
 }
 
@@ -1717,35 +1742,50 @@ table>tfoot:not(:last-child) {
   margin-top: 10%;
 }
 
-#three-columns .w-50{
+.h-800 .block_content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#three-columns .w-50 {
   width: 50%;
   margin-top: 50px;
 }
 
 #three-columns .w-50:nth-child(2),
-#three-columns .w-50:nth-child(1){
+#three-columns .w-50:nth-child(1) {
   margin-top: 0px;
 }
 
-.no-line::before{
+.no-line::before {
   height: 0px !important;
 }
 
-.blue-bg{
+.blue-bg {
   background-color: var(--secondary);
 }
 
-.blue-bg h2{
+.blue-bg h2 {
   color: #fff;
 }
 
-.blue-bg p{
+.blue-bg p {
   color: var(--text-secondary);
 }
 
-.no-cover img{
+.no-cover img {
   -o-object-fit: unset;
      object-fit: unset;
+}
+
+#text-image .image-container{
+  display: flex;
+  align-items: center;
+}
+
+.w-\[88\%\] {
+  width: 88%;
 }
 
 .before\:absolute::before {
@@ -1788,8 +1828,6 @@ table>tfoot:not(:last-child) {
   margin-bottom: 0px;
 }
 
-<<<<<<< Updated upstream
-=======
 .last\:mt-\[100px\]:last-child {
   margin-top: 100px;
 }
@@ -1802,7 +1840,6 @@ table>tfoot:not(:last-child) {
   padding-bottom: 0px;
 }
 
->>>>>>> Stashed changes
 @media (min-width: 1024px) {
   .lg\:sticky {
     position: sticky;
@@ -1833,10 +1870,6 @@ table>tfoot:not(:last-child) {
     margin-bottom: 46px;
   }
 
-  .lg\:mb-\[50px\] {
-    margin-bottom: 50px;
-  }
-
   .lg\:mb-\[70px\] {
     margin-bottom: 70px;
   }
@@ -1859,6 +1892,10 @@ table>tfoot:not(:last-child) {
 
   .lg\:mt-\[40px\] {
     margin-top: 40px;
+  }
+
+  .lg\:mt-\[60px\] {
+    margin-top: 60px;
   }
 
   .lg\:block {
@@ -1885,12 +1922,12 @@ table>tfoot:not(:last-child) {
     height: 460px;
   }
 
-  .lg\:h-\[606px\] {
-    height: 606px;
-  }
-
   .lg\:h-\[585px\] {
     height: 585px;
+  }
+
+  .lg\:h-\[606px\] {
+    height: 606px;
   }
 
   .lg\:w-1\/2 {
@@ -1961,8 +1998,8 @@ table>tfoot:not(:last-child) {
     width: 80%;
   }
 
-  .lg\:w-\[85\%\] {
-    width: 85%;
+  .lg\:w-\[88\%\] {
+    width: 88%;
   }
 
   .lg\:w-\[90\%\] {
@@ -2034,6 +2071,10 @@ table>tfoot:not(:last-child) {
     row-gap: 0px;
   }
 
+  .lg\:gap-y-\[100px\] {
+    row-gap: 100px;
+  }
+
   .lg\:px-\[100px\] {
     padding-left: 100px;
     padding-right: 100px;
@@ -2049,6 +2090,11 @@ table>tfoot:not(:last-child) {
     padding-right: 20px;
   }
 
+  .lg\:px-\[35px\] {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .lg\:px-\[50px\] {
     padding-left: 50px;
     padding-right: 50px;
@@ -2061,10 +2107,6 @@ table>tfoot:not(:last-child) {
 
   .lg\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .lg\:pb-\[100px\] {
-    padding-bottom: 100px;
   }
 
   .lg\:pb-\[110px\] {

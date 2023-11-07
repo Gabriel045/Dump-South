@@ -26,13 +26,13 @@
                 </div>
             </div>
 
-            <div class="flex w-full pt-[27px] mt-[100px] flex-wrap">
+            <div class="flex w-full pt-[27px] mt-[56px] lg:mt-[100px] flex-wrap">
                 <div class="w-full lg:w-[50%]">
                     <p class="text-[#ffffffcc] text-[16px] font-[400]">©2023 Dump South. All rights reserved.</p>
                 </div>
                 <div class="w-full lg:w-[50%] flex justify-between mt-[20px] lg:mt-0 lg:justify-end gap-[50px]">
-                    <a class="text-[#ffffffcc] text-[16px] font-[400]">Terms and Conditions</a>
-                    <a href="/privacy-policy" class="text-[#ffffffcc] text-[16px] font-[400]">Privacy Policy</a>
+                    <a class="text-[#ffffffcc] text-[16px] font-[400] cursor-pointer">Terms and Conditions</a>
+                    <a href="/privacy-policy" class="text-[#ffffffcc] text-[16px] font-[400] cursor-pointer">Privacy Policy</a>
                 </div>
             </div>
         </div>

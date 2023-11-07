@@ -38,7 +38,7 @@ $button         = get_field('button');
 
 <section class="relative <?php echo $block['className'] ?> <?php echo (!empty($background)) ? 'lg:h-[1024px]' : 'lg:h-[606px] flex justify-center' ?> bg-secondary h-auto" style="<?php echo (!empty($background)) ? 'background-position:center; background-size:cover; background-repeat:no-repeat; background-image: url(' . $background . ')' : '' ?>">
     <div class="block_content">
-        <div class="lg:w-[85%] flex flex-col gap-y-[30px] <?php echo (!empty($background)) ? 'lg:mt-[25%] mt-[120px]' : 'lg:mt-[100px] mt-[150px]' ?> ">
+        <div class=" lg:w-[88%] flex flex-col gap-y-[30px] <?php echo (!empty($background)) ? 'lg:mt-[25%] mt-[120px]' : 'lg:mt-[100px] mt-[150px]' ?> ">
             <div class="font-Milkstore text-white font-[400] text-[42px] leading-normal "> <?php echo $title ?> </div>
             <p class="text-[18px] font-[400] <?php echo (!empty($background)) ? ' text-[#fff]' : 'text-text-secondary' ?> " style="text-shadow: 0px 4px 7px #000;"> <?php echo $text ?> </p>
             <?php if (!empty($button['url'])) : ?>

@@ -30,7 +30,7 @@ $sections = get_field('section');
 ?>
 
 
-<section id="text-image"  class="<?php echo $block['className'] ?>">
+<section id="text-image" class="<?php echo $block['className'] ?>">
     <div class="block_content">
         <?php echo (!empty($title)) ? '<div class="text-center mb-[50px] lg:mb-[100px]"> ' . $title . ' </div>' : ''  ?>
         <?php foreach ($sections as $key => $section) :
@@ -42,7 +42,7 @@ $sections = get_field('section');
 
             <div class="<?php echo ($block['className'] == "mb-100") ? 'mb-[50px] lg:mb-[100px]' : 'mb-[50px]' ?> last:mb-0 flex flex-wrap lg:flex-nowrap gap-[80px]   <?php echo ($image_position == "row-reverse") ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col-reverse'  ?>">
                 <?php if (!empty($image)) : ?>
-                    <div class="w-full lg:w-[50%] ">
+                    <div class="w-full lg:w-[50%] image-container">
                         <img class="<?php echo $block['className'] ?> w-[370px] h-[370px] lg:w-[460px] lg:h-[460px] rounded-[10px] object-cover" src="<?php echo $image ?>" alt="">
                     </div>
                 <?php endif ?>

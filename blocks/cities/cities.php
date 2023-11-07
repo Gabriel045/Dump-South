@@ -44,7 +44,7 @@ $cta        = get_field('cta');
                     <div class="text-secondary "> <?php echo $title ?> </div>
                     <ul class="flex flex-row w-full flex-wrap text-[#18293e99] ml-[20px]">
                         <?php foreach ($cities as $key => $city) : ?>
-                            <li class="w-1/2 mb-[30px] last:mb-0 list-disc	">
+                            <li class="w-1/2 mb-[30px] last:mb-0 list-disc">
                                 <?php echo $city['city'] ?>
                             </li>
                         <?php endforeach ?>
@@ -63,5 +63,5 @@ $cta        = get_field('cta');
 
 
         </div>
-    </div>
+    </d  iv>
 </section>
