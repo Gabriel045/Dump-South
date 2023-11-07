@@ -30,7 +30,7 @@ $sections = get_field('section');
 ?>
 
 
-<section id="text-image">
+<section id="text-image"  class="<?php echo $block['className'] ?>">
     <div class="block_content">
         <?php echo (!empty($title)) ? '<div class="text-center mb-[50px] lg:mb-[100px]"> ' . $title . ' </div>' : ''  ?>
         <?php foreach ($sections as $key => $section) :

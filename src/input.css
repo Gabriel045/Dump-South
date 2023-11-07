@@ -533,3 +533,23 @@ table>tfoot:not(:last-child) {
 #three-columns .w-50:nth-child(1){
     margin-top: 0px;
 }
+
+.no-line::before{
+    height: 0px !important;
+}
+
+.blue-bg{
+    background-color: var(--secondary);
+}
+
+.blue-bg h2{
+    color: #fff;
+}
+
+.blue-bg p{
+    color: var(--text-secondary);
+}
+
+.no-cover img{
+    object-fit: unset;
+}

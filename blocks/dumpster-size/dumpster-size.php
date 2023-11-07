@@ -41,10 +41,10 @@ $sections = get_field('section');
             $body              = $section['body']; 
             $button            = $section['button']; ?>
 
-            <div class="mb-[100px] last:mb-0 flex flex-wrap lg:flex-nowrap gap-[60px] lg:gap-[80px]   <?php echo ($image_position == "row-reverse") ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col-reverse'  ?>">
+            <div class="mb-[100px] last:mb-0 flex flex-wrap lg:flex-nowrap gap-[40px] lg:gap-[80px]   <?php echo ($image_position == "row-reverse") ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col-reverse'  ?>">
                 <?php if (!empty($image)) : ?>
-                    <div class="w-full lg:w-[50%] ">
-                        <img class="rounded-[10px] h-[330px] lg:h-[100%] object-cover" src="<?php echo $image ?>" alt="">
+                    <div class="w-full lg:w-[50%] flex items-center">
+                        <img class="rounded-[10px] " src="<?php echo $image ?>" alt="">
                     </div>
                 <?php endif ?>
                 <div class="<?php echo !empty($image) ? 'w-full lg:w-[50%]' : 'w-full text-center' ?>  lg:flex lg:flex-col  justify-center">

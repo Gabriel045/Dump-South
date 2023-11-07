@@ -582,10 +582,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .top-\[20px\] {
   top: 20px;
 }
@@ -639,12 +635,12 @@ video {
   margin-bottom: 10px;
 }
 
-.mb-\[17px\] {
-  margin-bottom: 17px;
+.mb-\[15px\] {
+  margin-bottom: 15px;
 }
 
-.mb-\[1px\] {
-  margin-bottom: 1px;
+.mb-\[17px\] {
+  margin-bottom: 17px;
 }
 
 .mb-\[20px\] {
@@ -715,6 +711,10 @@ video {
   margin-top: 15px;
 }
 
+.mt-\[17px\] {
+  margin-top: 17px;
+}
+
 .mt-\[20px\] {
   margin-top: 20px;
 }
@@ -723,24 +723,16 @@ video {
   margin-top: 2px;
 }
 
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
 .mt-\[50px\] {
   margin-top: 50px;
 }
 
 .mt-\[69px\] {
   margin-top: 69px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[40px\] {
-  margin-top: 40px;
-}
-
-.mt-\[17px\] {
-  margin-top: 17px;
 }
 
 .block {
@@ -779,8 +771,12 @@ video {
   height: 285px;
 }
 
-.h-\[350px\] {
-  height: 350px;
+.h-\[330px\] {
+  height: 330px;
+}
+
+.h-\[360px\] {
+  height: 360px;
 }
 
 .h-\[370px\] {
@@ -813,10 +809,6 @@ video {
 
 .w-\[150px\] {
   width: 150px;
-}
-
-.w-\[350px\] {
-  width: 350px;
 }
 
 .w-\[370px\] {
@@ -866,10 +858,6 @@ video {
 
 .resize {
   resize: both;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .flex-row {
@@ -940,6 +928,10 @@ video {
   gap: 50px;
 }
 
+.gap-\[60px\] {
+  gap: 60px;
+}
+
 .gap-\[80px\] {
   gap: 80px;
 }
@@ -950,6 +942,10 @@ video {
 
 .gap-y-\[30px\] {
   row-gap: 30px;
+}
+
+.gap-y-\[50px\] {
+  row-gap: 50px;
 }
 
 .overflow-x-clip {
@@ -969,16 +965,8 @@ video {
   border-width: 1px;
 }
 
-.border-b-\[1px\] {
-  border-bottom-width: 1px;
-}
-
 .border-\[\#0000000d\] {
   border-color: #0000000d;
-}
-
-.border-\[\#00000033\] {
-  border-color: #00000033;
 }
 
 .border-\[\#F2F2F2\] {
@@ -1027,6 +1015,11 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-none {
+  -o-object-fit: none;
+  object-fit: none;
 }
 
 .p-\[20px\] {
@@ -1082,10 +1075,6 @@ video {
   padding-bottom: 40px;
 }
 
-.pb-\[100px\] {
-  padding-bottom: 100px;
-}
-
 .pb-\[60px\] {
   padding-bottom: 60px;
 }
@@ -1104,10 +1093,6 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
-}
-
-.pt-\[60px\] {
-  padding-top: 60px;
 }
 
 .pt-\[80px\] {
@@ -1629,14 +1614,23 @@ table>tfoot:not(:last-child) {
   width: 100%;
 }
 
+.registration-form .gform_wrapper.gravity-theme .gform_fields {
+  grid-row-gap: 24px !important;
+}
+
+.registration-form .ginput_complex label{
+  margin-bottom: 5px !important;
+}
+
 .registration-form input[type="text"],
 .registration-form input[type="email"],
 .registration-form input[type="tel"],
 .registration-form textarea {
   border: 1px solid #D0D5DD !important;
   border-radius: 8px !important;
-  box-shadow: none !important;
   color: #667085 !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  font-size: 16px !important;
 }
 
 .registration-form input[type="text"],
@@ -1648,10 +1642,19 @@ table>tfoot:not(:last-child) {
 .registration-form label {
   color: #344054 !important;
   font-size: 14px !important;
+  font-weight: 400 !important;
 }
 
 .registration-form #input_1_6 {
   padding-left: 90px !important;
+}
+
+.registration-form #input_1_6::-moz-placeholder {
+  color: #66708595 !important;
+}
+
+.registration-form #input_1_6::placeholder {
+  color: #66708595 !important;
 }
 
 .gform-theme--foundation .gform_fields {
@@ -1709,7 +1712,7 @@ table>tfoot:not(:last-child) {
   margin-left: 20px;
 }
 
-.h-800.lg\:h-\[1024px\]{
+.h-800.lg\:h-\[1024px\] {
   height: 800px;
 }
 
@@ -1717,35 +1720,14 @@ table>tfoot:not(:last-child) {
   margin-top: 10%;
 }
 
-#three-columns .w-50{
+#three-columns .w-50 {
   width: 50%;
   margin-top: 50px;
 }
 
 #three-columns .w-50:nth-child(2),
-#three-columns .w-50:nth-child(1){
+#three-columns .w-50:nth-child(1) {
   margin-top: 0px;
-}
-
-.no-line::before{
-  height: 0px !important;
-}
-
-.blue-bg{
-  background-color: var(--secondary);
-}
-
-.blue-bg h2{
-  color: #fff;
-}
-
-.blue-bg p{
-  color: var(--text-secondary);
-}
-
-.no-cover img{
-  -o-object-fit: unset;
-     object-fit: unset;
 }
 
 .before\:absolute::before {
@@ -1788,21 +1770,13 @@ table>tfoot:not(:last-child) {
   margin-bottom: 0px;
 }
 
-<<<<<<< Updated upstream
-=======
-.last\:mt-\[100px\]:last-child {
-  margin-top: 100px;
+@media (min-width: 640px) {
+  .sm\:object-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }
 
-.last\:border-0:last-child {
-  border-width: 0px;
-}
-
-.last\:pb-0:last-child {
-  padding-bottom: 0px;
-}
-
->>>>>>> Stashed changes
 @media (min-width: 1024px) {
   .lg\:sticky {
     position: sticky;
@@ -1829,14 +1803,6 @@ table>tfoot:not(:last-child) {
     margin-bottom: 100px;
   }
 
-  .lg\:mb-\[46px\] {
-    margin-bottom: 46px;
-  }
-
-  .lg\:mb-\[50px\] {
-    margin-bottom: 50px;
-  }
-
   .lg\:mb-\[70px\] {
     margin-bottom: 70px;
   }
@@ -1851,6 +1817,10 @@ table>tfoot:not(:last-child) {
 
   .lg\:mt-\[100px\] {
     margin-top: 100px;
+  }
+
+  .lg\:mt-\[135px\] {
+    margin-top: 135px;
   }
 
   .lg\:mt-\[25\%\] {
@@ -1873,6 +1843,10 @@ table>tfoot:not(:last-child) {
     display: none;
   }
 
+  .lg\:h-\[100\%\] {
+    height: 100%;
+  }
+
   .lg\:h-\[1024px\] {
     height: 1024px;
   }
@@ -1887,10 +1861,6 @@ table>tfoot:not(:last-child) {
 
   .lg\:h-\[606px\] {
     height: 606px;
-  }
-
-  .lg\:h-\[585px\] {
-    height: 585px;
   }
 
   .lg\:w-1\/2 {
@@ -1911,10 +1881,6 @@ table>tfoot:not(:last-child) {
 
   .lg\:w-\[25\%\] {
     width: 25%;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
   }
 
   .lg\:w-\[33\.3\%\] {
@@ -1961,8 +1927,8 @@ table>tfoot:not(:last-child) {
     width: 80%;
   }
 
-  .lg\:w-\[85\%\] {
-    width: 85%;
+  .lg\:w-\[88\%\] {
+    width: 88%;
   }
 
   .lg\:w-\[90\%\] {
@@ -2014,10 +1980,6 @@ table>tfoot:not(:last-child) {
     gap: 30px;
   }
 
-  .lg\:gap-\[50px\] {
-    gap: 50px;
-  }
-
   .lg\:gap-\[60px\] {
     gap: 60px;
   }
@@ -2034,6 +1996,10 @@ table>tfoot:not(:last-child) {
     row-gap: 0px;
   }
 
+  .lg\:gap-y-\[100px\] {
+    row-gap: 100px;
+  }
+
   .lg\:px-\[100px\] {
     padding-left: 100px;
     padding-right: 100px;
@@ -2047,6 +2013,11 @@ table>tfoot:not(:last-child) {
   .lg\:px-\[20px\] {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .lg\:px-\[35px\] {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .lg\:px-\[50px\] {

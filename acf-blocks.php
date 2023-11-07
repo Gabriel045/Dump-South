@@ -20,4 +20,5 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/blocks/blogs');
     register_block_type(__DIR__ . '/blocks/latest-blog');
     register_block_type(__DIR__ . '/blocks/blog-content');
+    register_block_type(__DIR__ . '/blocks/cities');
 }

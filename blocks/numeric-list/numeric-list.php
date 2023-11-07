@@ -38,7 +38,7 @@ $items           = get_field('items');
     <div class="block_content">
         <?php if (!empty($image)) : ?>
             <div class="w-full mb-[100px]">
-                <img class="rounded-[10px] w-full lg:h-[460px] h-[285px]" src="<?php echo $image ?>" alt="">
+                <img class="rounded-[10px] w-full lg:h-[585px] h-[285px]" src="<?php echo $image ?>" alt="">
             </div>
         <?php endif ?>
         <div class="w-full flex flex-col gap-[50px] lg:gap-[100px] lg:px-[100px]">
